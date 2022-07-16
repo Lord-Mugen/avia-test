@@ -1,0 +1,46 @@
+.c-card {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  width: 100%;
+  
+  @media (min-width: 48em) {
+    padding: 3rem 0rem 3rem;
+    margin-right: 0;
+     &:nth-child(1){
+      margin-left: 1rem;
+    }
+  }
+  
+  &__image {
+    border-radius: 1.125rem;
+  }
+
+  &__data {
+    display: grid;
+    justify-items: center;
+    padding-top: 2rem;
+  }
+
+  &__name {
+    font-weight: 600;
+  }
+
+  &__price {
+    background-color: color(gray-cards);
+    color: color(blue-primary);
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  &__coin {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}

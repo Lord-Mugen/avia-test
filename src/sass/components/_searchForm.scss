@@ -1,0 +1,136 @@
+.c-search-form {
+  &__control-group {
+    display: flex;
+    
+    flex-direction: column;
+    @media (min-width: 30em) {
+      align-items: center;
+      flex-direction: row;
+    }
+    &:nth-child(2) {
+      margin-top: 2rem;
+    }
+    &--select{
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    @media (min-width: 30em) {
+      &:nth-child(2),
+      &:nth-child(3) {
+        margin-left: 2rem;
+      }
+    }
+  }
+
+  &__input {
+    appearance: none;
+    border: 2px solid color(black);
+    border-radius: 50%;
+    width: 1.8rem;
+    height: 1.8rem;
+    outline: none;
+    margin: 0 1rem 0 0;
+    position: relative;
+
+    &:checked {
+      outline: none;
+      border: none;
+    }
+    &:checked::before {
+      position: absolute;
+      content: "\00A0\2713\00A0" !important;
+      border: 2px solid color(black);
+      border-radius: 50%;
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+  }
+  
+  &__select-group{
+  
+    width: 100%;
+    margin-bottom:1rem;
+    
+    @media (min-width: 48em) {
+      margin-bottom:1rem;
+      max-width: 48%;
+      &:nth-child(2){
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+    }
+
+    @media (min-width: 62em) {
+      width: 30%;
+      margin-bottom:0;
+    }
+    @media (min-width: 80em) {
+      width: 44.5rem;
+    }
+
+    &::before,
+    &::after{
+      content:'';
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+     
+    }
+    &::before{
+      background-image: url('../../assets/location.png');
+      transform: translate(1rem, 1.2rem);
+    }
+    &::after{
+      background-image: url('../../assets/arrow-down.png');
+      transform: translate(-2.5rem, 1.8rem);
+    }
+    
+  }
+   
+  &__select-icons{
+    position: relative;
+    min-width: 100%;
+    background-color: red;
+    
+  }
+
+  &__select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: none;
+    outline: 0;
+    width: 100%;
+    padding: 1.3rem 3rem;
+    border-radius:0.7rem;
+    border:0.1rem solid color(gray-primary);
+  }
+
+  &__button{
+    border:none;
+    outline: none;
+    background-color: color(blue-primary);
+    padding: 1.2rem 9.4rem;
+    border-radius: 0.7rem;
+    color:color(white);
+    transition: 0.2s ease-in-out;
+    width: 100%;
+    &:hover,&:focus{
+      cursor: pointer;
+      background-color: darken(color(blue-primary), 10% );
+    }
+
+    @media (min-width: 48em) {
+      width: auto;
+    }
+  }
+
+
+}

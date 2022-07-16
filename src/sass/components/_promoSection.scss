@@ -1,0 +1,89 @@
+.c-promo-section {
+  padding: 5rem 0rem;
+  width: 100%;
+
+  @media (min-width: 48em) {
+    padding: 5rem 2rem;
+  }
+  @media (min-width: 62em) {
+    padding: 5rem 22rem;
+  }
+  &__title {
+    font-size: 2.2rem;
+    margin-left: 1rem;
+    margin-bottom: 5rem;
+    
+    @media (min-width: 48em) {
+      font-size: 3rem;
+    }
+  }
+
+  &__container {
+    width: 100%;
+    height: 49.3rem;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 48em) {
+      flex-direction: row;
+    }
+  }
+
+  &__content-card {
+    height: 100%;
+    width: 100%;
+    padding:0 3rem;
+    margin-bottom: 2rem;
+    @media (min-width: 48em) {
+      margin-bottom: unset;
+      padding: 0;
+      width: 60%;
+    }
+
+    &--right {
+      width: 100%;
+      padding-left:3rem;
+      @media (min-width: 48em) {
+        padding-left: 1.5rem;
+        width: 40%;
+      }
+    }
+
+    &--inside {
+      width: 100%;
+      height: 100%;
+      padding-bottom: 1.5rem;
+      padding: 0;
+      @media (min-width: 48em) {
+        height: 50%;
+      }
+      
+    }
+
+    &--inside-down{
+      display: flex;
+      justify-content: space-between;
+      width:100%;
+      height:100%;
+      padding: unset;
+      padding-top: 2rem;
+      flex-direction: column;
+
+      &>.c-card-promo>img{
+        width: 100%;
+        right: 0;
+      }
+      @media (min-width: 48em) {
+        height:50%;
+        flex-direction: row;
+        margin-bottom: unset;
+        &>.c-card-promo>img{
+          width: 95%;
+          right: 0;
+          height: 100%;
+        }
+      }
+    }
+    
+  }
+
+}

@@ -1,0 +1,11 @@
+.c-icon {
+    @extend %icon;
+  
+    @each $name, $val in $icons {
+      &--#{$name} {
+        &::before {
+          content: $val;
+        }
+      }
+    }
+  }

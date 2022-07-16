@@ -1,0 +1,17 @@
+.c-navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+
+    &__icons-container{
+        display: flex;
+        margin-bottom: 5em;
+    }
+    &__icon{
+        font-size: 1.7em;
+        margin-left: 2rem;
+    }
+}
+
+
+
