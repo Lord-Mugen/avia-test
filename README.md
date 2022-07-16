@@ -8,8 +8,10 @@ Prueba tecnica para frontend developer de Aviatur
 Enlace de despliegue : https://avia-test-three.vercel.app/
 
 
+
 ## Herramientas de desarrollo
 El proyecto fue desarrollado con: Reactjs, Jsx, Sass y BEM.
+
 
 
 ## Instalacion
